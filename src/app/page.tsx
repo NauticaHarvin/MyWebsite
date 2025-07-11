@@ -1,103 +1,160 @@
-import Image from "next/image";
+// app/page.tsx
+import Link from "next/link";
 
-export default function Home() {
+// text-[#ff340a]
+export default function LandingPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <div className="p-[15px]">
+        {/* Nav Bar Left */}
+        <div className="float-left">
+          <ul className="flex">
+            <li className="float-left">
+              <a className="text-[#00cbf5]" href="#">
+                Nautica Harvin
+              </a>
+            </li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Nav Bar Right */}
+        <div className="float-right">
+          <ul>
+            <li className="float-right ml-6">
+              <a className="text-[#00cbf5]" href="/about/">
+                Resume
+              </a>
+            </li>
+
+            <li className="float-right ml-6">
+              <a className="text-[#00cbf5]" href="/parks">
+                Explorations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Email on Page */}
+      <div className="relative">
+        <h1 className="text-[200px] absolute left-10 inset-y-10 text-[#00cbf5]">
+          DREAM
+        </h1>
+        <h1 className="text-[200px] absolute left-10 inset-y-60 text-[#00cbf5]">
+          DEBUG
+        </h1>
+        <h1 className="text-[200px] absolute left-10 inset-y-110 text-[#00cbf5]">
+          DISCOVER
+        </h1>
+      </div>
+
+      {/* Welcome Message */}
+      <div className="relative">
+        {/* Headshot Added */}
+        <div className="bg-[url('/headshot.jpg')] bg-cover bg-center h-128 w-140 absolute inset-y-60 right-30 -z-1"></div>
+
+        <p className="text-lg w-[485px] h-[232px] absolute left-10 top-190 text-[#00cbf5]">
+          Welcome to My Crib!! Hi, I’m Nautica — engineer by day, adventurer by
+          heart, and professional thrill-seeker 24/7. I build clean, interactive
+          web experiences with the same intensity I bring to a steep hike, a
+          spontaneous road trip, or a brutal workout.
+        </p>
+
+        <p className="text-lg w-[485px] h-[232px] absolute left-10 top-250 text-[#00cbf5]">
+          I write code like I run trails: focused, fast, and occasionally
+          muttering to myself. Whether it’s React, Tailwind, or TypeScript, I
+          love turning ideas into digital reality — and making it look good
+          while I’m at it. When I’m not shipping features, you’ll probably find
+          me chasing sunsets in a national park, flipping through my camera roll
+          like it’s a photojournal, or plotting my next spontaneous adventure.
+          This project is part portfolio, part personal archive — and 100% me.
+          Take a look around.
+        </p>
+      </div>
+    </main>
   );
 }
+
+// // app/page.tsx
+// import Link from "next/link";
+
+// // text-[#ff340a]
+// export default function LandingPage() {
+//   return (
+//     <main>
+//       <div className="p-[15px]">
+//         {/* Nav Bar Left */}
+//         <div className="float-left">
+//           <ul className="flex">
+//             <li className="float-left">
+//               <a className="text-[#00cbf5]" href="#">
+//                 Nautica Harvin
+//               </a>
+//             </li>
+//           </ul>
+//         </div>
+
+//         {/* Nav Bar Right */}
+//         <div className="float-right">
+//           <ul>
+//             <li className="float-right ml-6">
+//               <a className="text-[#00cbf5]" href="/about/">
+//                 Resume
+//               </a>
+//             </li>
+
+//             <li className="float-right ml-6">
+//               <a className="text-[#00cbf5]" href="/parks">
+//                 Explorations
+//               </a>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//       <main className="min-h-screen flex flex-col items-center justify-center gap-6 p-10">
+//         <h1 className="font-pacifico text-4xl text-blue-600">Pacifico Font</h1>
+//         <h1 className="font-playfair text-4xl text-green-600">
+//           Playfair Display Font
+//         </h1>
+//         <h1 className="font-inter text-4xl text-purple-600">Inter Font</h1>
+//       </main>
+
+//       {/* Email on Page */}
+//       <div className="relative">
+//         <h1 className="text-[200px] absolute left-10 inset-y-10 text-[#00cbf5]">
+//           DREAM
+//         </h1>
+//         <h1 className="text-[200px] absolute left-10 inset-y-60 text-[#00cbf5]">
+//           DEBUG
+//         </h1>
+//         <h1 className="text-[200px] absolute left-10 inset-y-110 text-[#00cbf5]">
+//           DISCOVER
+//         </h1>
+//       </div>
+
+//       {/* Welcome Message */}
+//       <div className="relative">
+//         {/* Headshot Added */}
+//         <div className="bg-[url('/headshot.jpg')] bg-cover bg-center h-128 w-140 absolute inset-y-60 right-30 -z-1"></div>
+
+//         <p className="text-lg w-[485px] h-[232px] absolute left-10 top-190 text-[#00cbf5]">
+//           Welcome to My Crib!! Hi, I’m Nautica — engineer by day, adventurer by
+//           heart, and professional thrill-seeker 24/7. I build clean, interactive
+//           web experiences with the same intensity I bring to a steep hike, a
+//           spontaneous road trip, or a brutal workout.
+//         </p>
+
+//         <p className="text-lg w-[485px] h-[232px] absolute left-10 top-250 text-[#00cbf5]">
+//           I write code like I run trails: focused, fast, and occasionally
+//           muttering to myself. Whether it’s React, Tailwind, or TypeScript, I
+//           love turning ideas into digital reality — and making it look good
+//           while I’m at it. When I’m not shipping features, you’ll probably find
+//           me chasing sunsets in a national park, flipping through my camera roll
+//           like it’s a photojournal, or plotting my next spontaneous adventure.
+//           This project is part portfolio, part personal archive — and 100% me.
+//           Take a look around.
+//         </p>
+//       </div>
+//     </main>
+//   );
+// }

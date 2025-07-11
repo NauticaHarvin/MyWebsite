@@ -1,0 +1,110 @@
+[
+  {
+    "id": "acadia",
+    "name": "Acadi National Park",
+    "visited": true,
+    "heroImage": "/images/acadia/acadia.jpg",
+    "albumImages": ["/images/acadia/1.jpg", "/images/acadia/2.jpg"]
+  },
+  {
+    "id": "american_samoa",
+    "name": "American Samoa National Park",
+    "visited": true,
+    "heroImage": "/images/american_samoa/american_samoa.jpg",
+    "albumImages": [
+      "/images/american_samoa/1.jpg",
+      "/images/american_samoa/2.jpg"
+    ]
+  },
+  {
+    "id": "arches",
+    "name": "Arches National Park",
+    "visited": true,
+    "heroImage": "/images/arches/arches.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "badlands",
+    "name": "Badlands National Park",
+    "visited": true,
+    "heroImage": "/images/badlands/badlands.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "big_bend",
+    "name": "Big Bend National Park",
+    "visited": true,
+    "heroImage": "/images/big_bend/big_bend.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "biscayne",
+    "name": "Biscayne National Park",
+    "visited": true,
+    "heroImage": "/images/biscayne/biscayne.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "black_canyon_gunnison",
+    "name": "Black Canyon Gunnison National Park",
+    "visited": true,
+    "heroImage": "/images/black_canyon_gunnison/black_canyon_gunnison.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "bryce_canyon",
+    "name": "Bryce Canyon National Park",
+    "visited": true,
+    "heroImage": "/images/bryce_canyon/bryce_canyon.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "canyonlands",
+    "name": "Canyonlands National Park",
+    "visited": true,
+    "heroImage": "/images/canyonlands/canyonlands.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "capitol_reef",
+    "name": "Capitol Reef National Park",
+    "visited": true,
+    "heroImage": "/images/capitol_reef/capitol_reef.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "carlsbad_caverns",
+    "name": "Carlsbad Caverns National Park",
+    "visited": true,
+    "heroImage": "/images/carlsbad_caverns/carlsbad_caverns.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "channel_islands",
+    "name": "Channel Island National Park",
+    "visited": true,
+    "heroImage": "/images/channel_island/channel_island.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "congaree",
+    "name": "Congaree National Park",
+    "visited": true,
+    "heroImage": "/images/congaree/congaree.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "crater_lake",
+    "name": "Crater Lake National Park",
+    "visited": true,
+    "heroImage": "/images/crater_lake/crater_lake.jpg",
+    "albumImages": []
+  },
+  {
+    "id": "cuyahoga_valley",
+    "name": "Cuyahoga Valley National Park",
+    "visited": true,
+    "heroImage": "/images/cuyahoga_valley/cuyahoga_valley.jpg",
+    "albumImages": []
+  }
+]
