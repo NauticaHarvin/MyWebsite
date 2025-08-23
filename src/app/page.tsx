@@ -5,106 +5,61 @@ import Link from "next/link";
 // bg-[#1d1d1d]
 export default function LandingPage() {
   return (
-    <main className="min-h-[calc(100vh-20rem)] flex flex-col">
-      {/* NavBar Container Flex-Col #1 */}
-      <div className="py-6 px-10 text-2xl font-semibold flex justify-between">
-        {/* Nav Bar Left Item */}
-        <div className=" px-4 py-2">
-          <a className="text-[#00cbf5]" href="#">
-            NAUTICA HARVIN
-          </a>
-        </div>
-
-        {/* Nav Bar Right Item */}
-        <ul className="flex space-x-6 px-4 py-2">
-          <li>
-            <a className="text-[#00cbf5]" href="/about/">
-              Resume
+    <>
+      <header className="h-[65px] sticky top-0 z-50 border-b backdrop-blur bg-black/10 ">
+        <div className=" flex h-16 items center space-x-4 ml-50 mr-45">
+          <div className="flex items-center font-montserrat font-bold text-[#37634d]">
+            <a>
+              <span>National Parks</span>
             </a>
-          </li>
-          <li>
-            <a className="text-[#00cbf5]" href="/parks">
-              Explorations
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Hero Section Flex-Col #2 */}
-      <section className="relative flex justify-center min-h-[calc(100vh+15rem)] items-start">
-        {/* Background Image */}
-        <div>
-          <div className="bg-[url('/headshot.jpg')] bg-cover bg-center h-[709px] w-[777px] mt-50 ml-200 absolute z-0"></div>
-          <div className="absolute mt-230 ml-200 font-geist text-[50px]">
-            Nautica Harvin
           </div>
-          <div className="absolute mt-245 ml-200 font-geist text-[30px]">
-            Engineer | Visionary | Adventure Seeker
-          </div>
-        </div>
 
-        <div className="relative">
-          <div className="w-[600px] space-y-5 z-10 p-6 absolute mt-200 ml-8">
-            <p className="text-lg">
-              Welcome to My Website!! Hi, I’m Nautica — engineer by day,
-              adventurer by heart, and professional thrill-seeker 24/7. I build
-              clean, interactive web experiences with the same intensity I bring
-              to a steep hike, a spontaneous road trip, or a brutal workout.
-            </p>
-            <p className="text-lg">
-              I write code like I run trails: focused, fast, and occasionally
-              muttering to myself. Whether it’s React, Tailwind, or TypeScript,
-              I love turning ideas into digital reality — and making it look
-              good while I’m at it.
-            </p>
-            <p className="text-lg">
-              When I’m not shipping features, you’ll probably find me chasing
-              sunsets in a national park, flipping through my camera roll like
-              it’s a photojournal, or plotting my next spontaneous adventure.
-              This project is part portfolio, part personal archive — and 100%
-              me. Take a look around.
-            </p>
+          <div className="flex flex-1 items-center">
+            <nav className="flex flex-1 justify-end ">
+              <ul className="flex justify-around text-[#37634d] items-center">
+                <li className="font-montserrat px-[16px] py-[8px] mr-[8px] rounded-lg hover:bg-neutral-300">
+                  <a>Explore</a>
+                </li>
+                <li className="font-montserrat px-[16px] py-[8px] mr-[8px] rounded-lg hover:bg-neutral-300">
+                  <a>About</a>
+                </li>
+                <li className="font-montserrat px-[16px] py-[8px] mr-[8px] rounded-lg hover:bg-neutral-300">
+                  <a>Gallery</a>
+                </li>
+                <li className="font-montserrat px-[16px] py-[8px] mr-[8px] whitespace-nowrap text-neutral-50 bg-[#37634d] hover:bg-[#2A4C3B] rounded-lg">
+                  <a>Get in Touch</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
+      </header>
 
-        {/* Big Words Container */}
-        <div className="relative flex flex-col pt-5 w-400 z-10 py-2">
-          <h1 className="text-[250px] text-[#00cbf5] font-gesitSans leading-none w-fit">
-            DREAM
-          </h1>
-          <h1 className="text-[250px] text-[#00cbf5] font-geistSans leading-none w-fit px-2">
-            DEBUG
-          </h1>
-          <h1 className="text-[250px] text-[#00cbf5] font-geistSans leading-none w-fit px-2">
-            DISCOVER
-          </h1>
-        </div>
-      </section>
-
-      {/* Welcome Message Section Flex-Col #3 */}
-      {/* <section className="bg-gray-500 py-16 px-10 text-[#00cbf5] font-geistmono flex justify-center">
-        <div className="max-w-xl space-y-8 z-10 bg-lime-200 p-6">
-          <p className="text-lg bg-pink-300 p-2">
-            Welcome to My Crib!! Hi, I’m Nautica — engineer by day, adventurer
-            by heart, and professional thrill-seeker 24/7. I build clean,
-            interactive web experiences with the same intensity I bring to a
-            steep hike, a spontaneous road trip, or a brutal workout.
-          </p>
-          <p className="text-lg bg-rose-300 p-2">
-            I write code like I run trails: focused, fast, and occasionally
-            muttering to myself. Whether it’s React, Tailwind, or TypeScript, I
-            love turning ideas into digital reality — and making it look good
-            while I’m at it. When I’m not shipping features, you’ll probably
-            find me chasing sunsets in a national park, flipping through my
-            camera roll like it’s a photojournal, or plotting my next
-            spontaneous adventure. This project is part portfolio, part personal
-            archive — and 100% me. Take a look around.
-          </p>
-        </div>
-      </section> */}
-    </main>
+      <main className="min-h-screen flex flex-col">
+        <section>
+          <div className="bg-[url('/Landing.jpg')] bg-[position:center_65%] bg-cover w-full h-screen relative">
+            {/* Image overlay for screen readability */}
+            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="relative flex flex-col min-h-screen items-center justify-center text-center mx-auto px-4 max-w-5xl">
+              <h1 className="text-6xl text-white font-extrabold mb-6">
+                Journey Through America's National Parks
+              </h1>
+              <p className="text-lg text-white/90 font-medium font-librebaskerville max-w-2xl mb-8">
+                An archive of my adventures, photos, and memories from the U.S.
+                National Parks.
+              </p>
+              <div className="flex flex-row gap-4 mt-4 items-center">
+                <a className="px-8 py-3 bg-[#37634d] hover:bg-[#2A4C3B] text-white font-medium rounded-lg text-lg shadow-lg hover:shadow-xl">
+                  Explore Parks
+                </a>
+                <a className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-medium px-8 py-3 rounded-lg text-lg">
+                  My Story
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
-
-// Pick Up
-// finish modifying the placement of the big words. using items start instead of center
