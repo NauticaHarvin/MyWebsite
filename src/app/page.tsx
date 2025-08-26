@@ -1,5 +1,7 @@
 // app/page.tsx
-import Link from "next/link";
+import { Pill } from "@/components/Pill";
+import { StatImage } from "@/components/StatImage";
+import { StatPill } from "@/components/StatPill";
 
 // text-[#ff340a]
 // bg-[#1d1d1d]
@@ -35,7 +37,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <main className="min-h-screen flex flex-col">
+      <main id="statSection" className="min-h-screen flex flex-col">
         <section>
           <div className="bg-[url('/Landing.jpg')] bg-[position:center_65%] bg-cover w-full h-screen relative">
             {/* Image overlay for screen readability */}
@@ -55,6 +57,57 @@ export default function LandingPage() {
                 <a className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-medium px-8 py-3 rounded-lg text-lg">
                   My Story
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[hsl(80,8%,95.1%)] py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <div className="flex justify-center">
+                <Pill pillText={"My Story"} />
+              </div>
+              <h1 className="text-[#37634d] font-montserrat font-bold text-5xl mb-6">
+                The Journey Behind The Lens
+              </h1>
+              <hr className="text-[#3973AC] w-[100px] mx-auto mt-4 border-2"></hr>
+            </div>
+
+            <div className="flex flex-row gap-16 items-center">
+              <div className="w-5/12">
+                <div className="aspect-[3/4]">
+                  <StatImage
+                    statImage="/StatImage_3.jpg"
+                    alt="Landing page image"
+                    yearsExplored={2}
+                    parksExplored={2}
+                  />
+                </div>
+              </div>
+
+              <div className="w-7/12">
+                <div>
+                  <p className="text-foreground/90 mb-6 text-lg text-[#344256e6]">
+                    As a passionate photographer and nature enthusiast, I've
+                    dedicated years to exploring America's most breathtaking
+                    national parks. This website serves as a visual diary of my
+                    adventures and a tribute to these natural treasures.
+                  </p>
+
+                  <p className="text-foreground/90 mb-8 text-[#344256e6]">
+                    From the towering sequoias of Yosemite to the otherworldly
+                    geysers of Yellowstone, each park offers unique landscapes,
+                    wildlife, and experiences that have profoundly shaped my
+                    appreciation for conservation and natural history.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-4">
+                  <StatPill stat="3k+" description="Photos Taken" />
+                  <StatPill stat="11" description="Trails Hiked" />
+                  <StatPill stat="5" description="States Visited" />
+                </div>
               </div>
             </div>
           </div>
