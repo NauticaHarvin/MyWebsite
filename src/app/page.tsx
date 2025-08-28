@@ -2,7 +2,7 @@
 import { Pill } from "@/components/Pill";
 import { StatImage } from "@/components/StatImage";
 import { StatPill } from "@/components/StatPill";
-
+import { SpotlightImage } from "@/components/SpotlightImage";
 // text-[#ff340a]
 // bg-[#1d1d1d]
 export default function LandingPage() {
@@ -38,6 +38,7 @@ export default function LandingPage() {
       </header>
 
       <main id="statSection" className="min-h-screen flex flex-col">
+        {/* Landing Section */}
         <section>
           <div className="bg-[url('/Landing.jpg')] bg-[position:center_65%] bg-cover w-full h-screen relative">
             {/* Image overlay for screen readability */}
@@ -62,6 +63,7 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* Quick Stats Section */}
         <section className="bg-[hsl(80,8%,95.1%)] py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
@@ -112,6 +114,124 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* Featured Parks Section */}
+        <section className="w-full h-full bg-[#1E2939] flex flex-col">
+          {/* Row 1 */}
+          <div className="flex flex-col items-center pt-32 mb-24">
+            <Pill
+              pillText={"BREATHTAKING DESTINATIONS"}
+              backgroundColor="#2A6F4D"
+              textColor="#FFFFFF"
+            />
+            <div className="flex flex-row text-6xl font-bold mb-4">
+              ICONIC
+              <div className="text-[#8F663D] ml-3">PARKS</div>
+            </div>
+            <div className="max-w-160 text-center font-medium text-lg">
+              <p>
+                Experience the raw beauty and untamed wilderness of America's
+                most stunning national parks through my lens.
+              </p>
+            </div>
+          </div>
+
+          {/* Row 2 */}
+          <div className="flex flex-col md:flex-row bg-amber-300 md:pl-40 md:gap-16">
+            {/* LEFT SIDE */}
+            <div className="w-full md:w-2/5 flex flex-col items-end justify-center p-4">
+              {/* Container to condense all content */}
+              <div className="bg-green-500 p-4 md:p-6 rounded-lg flex flex-col gap-4">
+                <Pill
+                  pillText={"SPOTLIGHT"}
+                  backgroundColor="#2A6F4D"
+                  textColor="#FFFFFF"
+                />
+
+                <div className="flex flex-wrap text-2xl md:text-4xl font-bold mb-2 md:mb-4">
+                  <span>YOSEMITE</span>
+                  <span className="text-[#8F663D] ml-2 md:ml-3">VALLEY</span>
+                </div>
+
+                <div className="max-w-prose font-medium text-sm md:text-lg space-y-2 md:space-y-4">
+                  <p>
+                    Nestled in California's Sierra Nevada mountains, Yosemite
+                    National Park is famed for its ancient giant sequoias,
+                    spectacular waterfalls, and iconic valley views shaped by
+                    massive granite walls.
+                  </p>
+                  <p>
+                    My three visits to Yosemite have yielded over 1,500
+                    photographs across different seasons, capturing the park's
+                    dynamic beauty from summer's vibrant greens to winter's
+                    serene snowscapes.
+                  </p>
+                </div>
+
+                <div className="flex gap-3 md:gap-4 mt-4 md:mt-6">
+                  <button className="px-3 py-1 md:px-4 md:py-2 bg-green-700 text-white rounded-lg text-sm md:text-base">
+                    VIEW GALLERY
+                  </button>
+                  <button className="px-3 py-1 md:px-4 md:py-2 bg-green-200 text-green-800 rounded-lg text-sm md:text-base">
+                    TRAVEL GUIDE
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE */}
+            <div className="w-full md:w-3/5 flex justify-start items-center bg-blue-400 p-4">
+              <SpotlightImage
+                parkImage={"/Landing.jpg"}
+                parkName={"Yosemite"}
+                parkDescription={"Short Simple Sweet"}
+              />
+            </div>
+          </div>
+
+          {/* <div className="flex flex-row bg-amber-300 pl-40 gap-16">
+            <div className="w-2/5 flex flex-col items-start justify-center bg-green-500">
+              <Pill
+                pillText={"SPOLIGHT"}
+                backgroundColor="#2A6F4D"
+                textColor="#FFFFFF"
+              />
+              <div className="flex flex-row text-6xl font-bold mb-4">
+                YOSEMITE
+                <div className="text-[#8F663D] ml-3">VALLEY</div>
+              </div>
+              <div className="max-w-160 font-medium text-lg">
+                <p>
+                  Nestled in California's Sierra Nevada mountains, Yosemite
+                  National Park is famed for its ancient giant sequoias,
+                  spectacular waterfalls, and iconic valley views shaped by
+                  massive granite walls.
+                </p>
+                <p>
+                  My three visits to Yosemite have yielded over 1,500
+                  photographs across different seasons, capturing the park's
+                  dynamic beauty from summer's vibrant greens to winter's serene
+                  snowscapes.
+                </p>
+              </div>
+              <div>
+                <button>VIEW GALLERY</button>
+                <button>TRAVEL GUIDE</button>
+              </div>
+            </div>
+
+            <div className="w-5/12 bg-blue-400">
+              <div className="w-full h-full flex justify-center items-center">
+                <SpotlightImage
+                  parkImage={"/Landing.jpg"}
+                  parkName={"Yosmite"}
+                  parkDescription={"Short Simple Sweet"}
+                />
+              </div>
+            </div>
+          </div> */}
+        </section>
+        <div className="bg-blue-900 h-100 w-full"></div>
       </main>
     </>
   );
