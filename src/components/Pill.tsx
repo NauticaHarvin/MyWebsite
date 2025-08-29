@@ -13,7 +13,7 @@ export const Pill = ({
 }: PillProps) => {
   return (
     <div
-      className="rounded-full w-fit mb-4 px-3 py-1 flex"
+      className="rounded-full w-fit mb-4 px-3 py-1 flex "
       style={{ color: textColor, backgroundColor }}
     >
       {pillText}

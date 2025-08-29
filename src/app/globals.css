@@ -49,3 +49,7 @@ body {
 .font-playfairDisplay {
   font-family: var(--font-playfair-display);
 }
+
+.font-oldstyle-nums {
+  font-variant-numeric: oldstyle-nums;
+}
