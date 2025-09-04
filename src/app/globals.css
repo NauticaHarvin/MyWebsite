@@ -1,10 +1,17 @@
+/* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+/* Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-montserrat: "Montserrat", sans-serif;
+  --font-playfair-display: "Playfair Display", serif;
+  --font-outfit: "Outfit", sans-serif;
 }
 
 /* System Preference Dark mode colors */
@@ -42,4 +49,12 @@ body {
 
 .font-montserrat {
   font-family: var(--font-montserrat);
+}
+
+.font-playfairDisplay {
+  font-family: var(--font-playfair-display);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
 }
