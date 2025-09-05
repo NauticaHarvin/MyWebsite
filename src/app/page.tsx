@@ -20,7 +20,7 @@ export default function LandingPage() {
             <nav className="flex flex-1 justify-end ">
               <ul className="flex justify-around text-[#37634d] items-center">
                 <li className="font-montserrat px-[16px] py-[8px] mr-[8px] rounded-lg hover:bg-neutral-300">
-                  <a>Explore</a>
+                  <a href="/parks">Explore</a>
                 </li>
                 <li className="font-montserrat px-[16px] py-[8px] mr-[8px] rounded-lg hover:bg-neutral-300">
                   <a>About</a>
@@ -513,7 +513,67 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <footer className="bg-blue-900 h-100 w-full"></footer>
+        <footer>
+          <div className="mx-auto w-full max-w-screen-xl p-4 py-8">
+            <div className="flex justify-between">
+              <div className=" flex flex-col font-playfairDisplay">
+                <div className="text-[#2a6f4d] text-2xl font-semibold">
+                  National Parks
+                </div>
+                <p className="mt-3 text-sm max-w-xs">
+                  Documenting adventures through America's most beautiful
+                  preserved landscapes and wilderness areas.
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-8 font-playfairDisplay">
+                <div>
+                  <div className="text-sm text-[#2a6f4d] mb-6 font-semibold uppercase">
+                    Explore
+                  </div>
+                  <ul>
+                    <li className="mb-4">Featured Parks</li>
+                    <li className="mb-4">Photo Gallery</li>
+                    <li className="mb-4">
+                      <a href="#">My Story</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-sm text-[#2a6f4d] mb-6 font-semibold uppercase">
+                    Resources
+                  </div>
+                  <ul>
+                    <li className="mb-4">National Park Service</li>
+                    <li className="mb-4">Recreation.gov</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-sm text-[#2a6f4d] mb-6 font-semibold uppercase">
+                    Contact
+                  </div>
+                  <ul>
+                    <li className="mb-4">Get In Touch</li>
+                    <li className="mb-4">Photography Services</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr className="my-6" />
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-center">
+                © 2025 National Parks Adventures. All Rights Reserved.
+              </span>
+              <div className="space-x-5">
+                <a href="#" className="hover:text-[#2a6f4d]">
+                  <span>LinkedIn</span>
+                </a>
+                <a href="#" className="hover:text-[#2a6f4d]">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );
