@@ -7,8 +7,8 @@ export default function ParksPage() {
   return (
     // main grid layout
 
-    <main>
-      <div className=" flex flex-col items-center justify-center text-center p-6">
+    <main className="flex">
+      <div className=" flex flex-col items-center justify-center text-center p-6 w-1/3 max-h-screen">
         <h1 className="text-4xl font-bold mb-6">
           Welcome To My National Parks Album
         </h1>
@@ -16,7 +16,7 @@ export default function ParksPage() {
           Track my journey through America’s national parks.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 items-center justify-center max-h-screen overflow-scroll">
         {/* maps each park into an grid item */}
         {parks.map((park) => (
           <div key={park.id} className="relative group">
